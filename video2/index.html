@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Username"><br><br>
+    <input type="password" placeholder="Password" id="pass"><input type="button" value="Show" onclick="showhide(this)" id="btn">
+</body>
+<script>
+    const showhide=(a)=>{
+        let box=document.querySelector("#pass")
+        if(a.value=="Show"){
+            box.setAttribute("type","text")
+            a.value="Hide"
+        }
+        else
+        {
+            box.setAttribute("type","password")
+            a.value="Show"
+        }
+    }
+</script>
+</html>
